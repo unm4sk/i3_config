@@ -3,6 +3,6 @@
 
 
 To install:
-`i3-gaps
+`i3-gaps`
 `bumblebee-status`
 `brightnessctl`
