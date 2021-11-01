@@ -107,7 +107,10 @@ bindsym $mod+a focus parent
 hide_edge_borders both
 
 # dmenu
-bindsym $mod+d exec dmenu_run
+#bindsym $mod+d exec dmenu_run
+
+#rofi
+bindsym $mod+d exec --no-startup-id "rofi -modi run,drun,window -show drun -show-icons -sidebar-mode"
 
 # adding gaps between windows
 gaps inner 10
@@ -277,6 +280,7 @@ bindsym $mod+p exec pavucontrol
 
 exec_always feh --bg-scale /home/baxxy/Pictures/wallpapersden.com_linux-retro_1920x1080.jpg
 exec_always "setxkbmap -model pc104 -layout us,ru -variant ,, -option grp:alt_shift_toggle"
+#exec_always --no-startup-id $HOME/polybar-collection/launch.sh
 exec telegram-desktop
 exec code
 exec --no-startup-id "syndaemon -i 1 -d"
